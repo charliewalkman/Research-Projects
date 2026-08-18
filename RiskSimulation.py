@@ -9,7 +9,7 @@ from datetime import datetime
 # -----------------------------
 # 1. Parameters
 # -----------------------------
-tickers = ["AAPL", "MSFT", "GOOGL", "AMZN"]
+tickers = ["BP", "INTC", "RR.L", "GSK"]
 start_date = "2015-01-01"
 end_date = datetime.today().strftime("%Y-%m-%d")
 
