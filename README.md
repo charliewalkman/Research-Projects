@@ -1,24 +1,7 @@
 # Table of Projects
 - [Portfolio Choice](#portfolio-choice)
 - [Portfolio Optimisation](#portfolio-optimisation)
-- [Risk Simulation]()
-
-----------------------------------------------------------------------------------------------
-# Portfolio Choice 
-This project walks through the core workflow of quantitative portfolio construction, from raw price data to optimal asset allocation.
-
-## Table of Contents
-- [Topics Covered](#topics-covered)
-- [Installation](#installation)
-- [Usage](#usage)
-- 
-
-## Topics Covered
-- Data fundamentals - understanding the inputs to a portfolio problem: assets, time period, prices, and returns
-- Return & risk metrics - computing daily and annualised returns, and constructing the covariance matrix
-- Optimisation - formulating and solving mean-variance optimisation with realistic constraints (weights summing to 1, no short-selling)
-- Interpretation - analysing optimal portfolio weights, risk (variance), and expected return, with visualisations of the results
-- Tangency portfolio - identifying the tangency portfolio by maximising the Sharpe ratio and comparing it against other allocations
+- [Risk Simulation](#risk-simulation)
 
 ## Installation
 1. Clone the repository:
@@ -27,6 +10,21 @@ cd Research-Projects
 
 2. Install dependencies:
 pip install -r requirements.txt
+
+----------------------------------------------------------------------------------------------
+# Portfolio Choice 
+This project walks through the core workflow of quantitative portfolio construction, from raw price data to optimal asset allocation.
+
+## Table of Contents
+- [Topics Covered](#topics-covered)
+- [Usage](#usage)
+
+## Topics Covered
+- Data fundamentals - understanding the inputs to a portfolio problem: assets, time period, prices, and returns
+- Return & risk metrics - computing daily and annualised returns, and constructing the covariance matrix
+- Optimisation - formulating and solving mean-variance optimisation with realistic constraints (weights summing to 1, no short-selling)
+- Interpretation - analysing optimal portfolio weights, risk (variance), and expected return, with visualisations of the results
+- Tangency portfolio - identifying the tangency portfolio by maximising the Sharpe ratio and comparing it against other allocations
 
 ## Usage 
 To run the project, use:
@@ -40,7 +38,6 @@ Project is also backtested against the S&P 500 as a benchmark, to compare effect
 
 ## Table of Contents
 - [Topics Covered](#topics-covered-1)
-- [Installation](#installation-1)
 - [Usage](#usage-1)
 
 ## Topics Covered 
@@ -49,14 +46,6 @@ Project is also backtested against the S&P 500 as a benchmark, to compare effect
 - Optimised Sortino Ratio - Compute signle-asset metrics, and comparative metrics vs. benchmark, including equal-weight and optimised-weight comparison.
 - Visualisations - Monte-Carlo PMPT space, with sortino optimum, as well as single-asset sortino. And efficient frontier using PMPT frontier.
 
-## Installation 
-1. Clone the repository:
-git clone https://github.com/charliewalkman/Research-Projects.git
-cd Research-Projects
-
-2. Install dependencies:
-pip install -r requirements.txt
-
 ## Usage 
 To run the project, use:
 python PortfolioOptimisation.py
@@ -64,4 +53,19 @@ python PortfolioOptimisation.py
 
 ----------------------------------------------------------------------------------------------
 # Risk Simulation
-Another quantitative project; this time working with dif
+Another quantitative project; this time working with different risk measures as to question the most effective risk management strategy for a portfolio, Value at Risk -VaR-, or Expected Shortfall -ES-?
+
+## Table of Contents
+- [Topics Covered](#topics-covered-2)
+- [Usage](#usage-2)
+
+## Topics Covered
+- Introduce assumptions and data - Data downloaded for assets, and assume different confidence levels and horizons.
+- Create helper functions - Functions made for hostorical returns of VaR, ES, and the returns of different horizons. 
+- ES and VaR calculated across different horizons, and confidence levels
+- Visualisations in monetary terms, and determine how much more conservative ES is - difference in value and ratio. 
+
+## Usage
+To run the project, use:
+python RiskSimulation.py
+----------------------------------------------------------------------------------------------
