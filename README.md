@@ -61,7 +61,7 @@ Another quantitative project; this time working with different risk measures as 
 
 ## Topics Covered
 - Introduce assumptions and data - Data downloaded for assets, and assume different confidence levels and horizons.
-- Create helper functions - Functions made for hostorical returns of VaR, ES, and the returns of different horizons. 
+- Create helper functions - Functions made for historical returns of VaR, ES, and the returns of different horizons. 
 - ES and VaR calculated across different horizons, and confidence levels
 - Visualisations in monetary terms, and determine how much more conservative ES is - difference in value and ratio. 
 
